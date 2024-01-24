@@ -1,0 +1,4 @@
+   def commit(self, message):
+        commit_id = f"{self.current_branch}_commit_{len(self.branches[self.current_branch]) + 1}"
+        self.branches[self.current_branch].append(commit_id)
+        print(f"Committed: {commit_id} - {message}")
